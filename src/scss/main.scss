@@ -4,3 +4,22 @@
 @include foundation-global-styles;
 @include foundation-flex-grid;
 @include foundation-typography;
+@include foundation-callout;
+
+// SVG icons embedded into headlines.
+@each $size, $headers in $header-sizes {
+    @include breakpoint($size) {
+        @each $header, $font-size in $headers {
+            #{$header} {
+                .svg-icon {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    width: rem-calc($font-size);
+                    height: rem-calc($font-size);
+                    // Compensate for white space.
+                    margin-bottom: rem-calc(-$font-size*0.15);
+                }
+            }
+        }
+    }
+}

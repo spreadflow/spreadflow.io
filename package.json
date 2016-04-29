@@ -10,7 +10,10 @@
     "gulp-sass": "^2.2.0"
   },
   "devDependencies": {
+    "gulp-inject": "^4.0.0",
     "gulp-livereload": "^3.8.1",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
     "st": "^1.1.0"
   },
   "scripts": {

@@ -1,0 +1,3 @@
+[submodule "src/foundation-icon-fonts"]
+	path = src/foundation-icon-fonts
+	url = https://github.com/zurb/foundation-icon-fonts.git
